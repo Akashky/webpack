@@ -1,0 +1,29 @@
+{
+  "parser": "babel-eslint",
+  "extends": ["airbnb"],
+  "env": {
+    "browser": true,  // This tells ESLint that you're working in a browser environment
+    "node": true      // Optional: If you're also working with Node.js
+  },
+  "rules": {
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/extensions": "off",
+    "import/no-unresolved": "off",
+    "import/order": "off",
+    "react/button-has-type": "off",
+    "react/jsx-props-no-spreading": "off",
+    "global-require": "off",
+    "no-plusplus": "off",
+    "import/no-dynamic-require": "off",
+    "react/destructuring-assignment": "off",
+    "react/prop-types": "off"
+
+    // Below lines are for the warning messages if you are missing any of the esLint rules 
+
+    // "react/destructuring-assignment": ["warn", "always"], // This tells ESLint that if you are not destructuring your props
+    // "react/prop-types": ["warn", {
+    //   "skipUndeclared": false,
+    //   "ignore": ["children"]
+    // }]
+  }
+}
